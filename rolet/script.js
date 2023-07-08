@@ -1,7 +1,7 @@
 const wheel = document.getElementById("wheel");
 const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
-//Object that stores values of minimum and maximum angle for a value
+
 const rotationValues = [
   { minDegree: 0, maxDegree: 30, value: "X AK 1" },
   { minDegree: 31, maxDegree: 90, value: "X AK 2" },
@@ -11,7 +11,7 @@ const rotationValues = [
   { minDegree: 271, maxDegree: 330, value: "X PM 2" },
   { minDegree: 331, maxDegree: 360, value: "X AK 1" },
 ];
-//Size of each piece
+//ukuran
 const data = [16, 16, 16, 16, 16, 16];
 
 var pieColors = [
@@ -29,9 +29,9 @@ let myChart = new Chart(wheel, {
   //Chart Type Pie
   type: "pie",
   data: {
-    //Labels(values which are to be displayed on chart)
+    //Label
     labels: ["X AK 2", "X AK 1", "X PM 2", "X PM 1", "X OTKP 2", "X OTKP 1"],
-    //Settings for dataset/pie
+    //datasets
     datasets: [
       {
         backgroundColor: pieColors,

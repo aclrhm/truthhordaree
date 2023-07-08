@@ -65,12 +65,20 @@ const valueGenerator = (angleValue) => {
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
       // buat pop up
       Swal.fire({
-        title: 'Tantangan',
-        text: i.value,
-        // confirmButtonText: innerHTML = `<a href="/truth/index.html" style="color: white; text-decoration: none;">Truth</a>`,
-        // cancelButtonText: innerHTML = `<a href="/dare/index.html" style="color: white; text-decoration: none;">Dare</a>`,
-        // showCancelButton: true,
-        showCloseButton: true
+        title: 'Ready?',
+        icon: 'warning',
+        text: "Siap terima tantangan ya!",
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Open!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            text: i.value,
+          }
+          )
+        }
       })
       // finalValue.innerHTML = `<p>Value: ${i.value}</p>`; 
       spinBtn.disabled = false;

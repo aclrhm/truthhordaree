@@ -3,13 +3,13 @@ const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
-  { minDegree: 0, maxDegree: 30, value: "azka" },
-  { minDegree: 31, maxDegree: 90, value: "dimas" },
-  { minDegree: 91, maxDegree: 150, value: "alif" },
-  { minDegree: 151, maxDegree: 210, value: "zidane" },
-  { minDegree: 211, maxDegree: 270, value: "refi" },
-  { minDegree: 271, maxDegree: 330, value: "cino" },
-  { minDegree: 331, maxDegree: 360, value: "azka"},
+  { minDegree: 0, maxDegree: 30, value: "X AK 1" },
+  { minDegree: 31, maxDegree: 90, value: "X AK 2" },
+  { minDegree: 91, maxDegree: 150, value: "X OTKP 1" },
+  { minDegree: 151, maxDegree: 210, value: "X OTKP 2" },
+  { minDegree: 211, maxDegree: 270, value: "X PM 1" },
+  { minDegree: 271, maxDegree: 330, value: "X PM 2" },
+  { minDegree: 331, maxDegree: 360, value: "X AK 1"},
 ];
 //Size of each piece
 const data = [16, 16, 16, 16, 16, 16];
@@ -30,7 +30,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: ["dimas", "azka", "cino", "refi", "zidane", "alif"],
+    labels: ["X AK 2", "X AK 1",   "X PM 2", "X PM 1", "X OTKP 2", "X OTKP 1"],
     //Settings for dataset/pie
     datasets: [
       {

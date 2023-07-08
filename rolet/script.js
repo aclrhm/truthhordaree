@@ -9,7 +9,7 @@ const rotationValues = [
   { minDegree: 151, maxDegree: 210, value: "X OTKP 2" },
   { minDegree: 211, maxDegree: 270, value: "X PM 1" },
   { minDegree: 271, maxDegree: 330, value: "X PM 2" },
-  { minDegree: 331, maxDegree: 360, value: "X AK 1"},
+  { minDegree: 331, maxDegree: 360, value: "X AK 1" },
 ];
 //Size of each piece
 const data = [16, 16, 16, 16, 16, 16];
@@ -30,7 +30,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: ["X AK 2", "X AK 1",   "X PM 2", "X PM 1", "X OTKP 2", "X OTKP 1"],
+    labels: ["X AK 2", "X AK 1", "X PM 2", "X PM 1", "X OTKP 2", "X OTKP 1"],
     //Settings for dataset/pie
     datasets: [
       {
@@ -67,10 +67,21 @@ const valueGenerator = (angleValue) => {
       Swal.fire({
         title: 'Selamat Bermain!',
         text: i.value,
-        confirmButtonText: innerHTML = `<a href="/truth/index.html" style="color: white; text-decoration: none;">Truth</a>`,
-        cancelButtonText: innerHTML = `<a href="/dare/index.html" style="color: white; text-decoration: none;">Dare</a>`,
+        // showDenyButton: innerHTML = `<a href="/truth/index.html" style="color: white; text-decoration: none;">Truth</a>`,
+        // showCancelButton: innerHTML = `<a href="/dare/index.html" style="color: white; text-decoration: none;">Dare</a>`,
+        // showDenyButton: true,
+        // showCancelButton: true,
+        // denyButtonColor: '#d33',
+        // cancelButtonColor: '#d33'
+
+        showCloseButton: true,
         showCancelButton: true,
-        showCloseButton: true
+        focusConfirm: false,
+        confirmButtonText:
+          '<a href="/truth/index.html" style="color: white; text-decoration: none;">Truth</a',
+        cancelButtonText:
+          '<a href="/dare/index.html" style="color: white; text-decoration: none;">Dare</a>',
+        cancelButtonColor: '#d33'
       })
       // finalValue.innerHTML = `<p>Value: ${i.value}</p>`; 
       spinBtn.disabled = false;

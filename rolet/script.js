@@ -42,7 +42,7 @@ let myChart = new Chart(wheel, {
   options: {
     //Responsive chart
     responsive: true,
-    animation: { duration: 0 },
+    animation: { duration: 1.5 },
     plugins: {
       //hide tooltip and legend
       tooltip: false,
@@ -53,7 +53,7 @@ let myChart = new Chart(wheel, {
       datalabels: {
         color: "#ffffff",
         formatter: (_, context) => context.chart.data.labels[context.dataIndex],
-        font: { size: 24 },
+        font: { size: 18 },
       },
     },
   },
@@ -100,7 +100,7 @@ spinBtn.addEventListener("click", () => {
   //Empty final value
   finalValue.innerHTML = `<p>Good Luck!</p>`;
   //Generate random degrees to stop at
-  let randomDegree = Math.floor(Math.random() * (355 - 0 + 1) + 0);
+  let randomDegree = Math.floor(Math.random() * (360 - 0 + 1) + 0);
   //Interval for rotation animation
   let rotationInterval = window.setInterval(() => {
     //Set rotation for piechart

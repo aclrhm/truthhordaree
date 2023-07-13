@@ -8,7 +8,7 @@ const rotationValues = [
   { minDegree: 91, maxDegree: 150, value: "Push up 3 kali!" },
   { minDegree: 151, maxDegree: 210, value: "Dance cupid di depan temen - temen!" },
   { minDegree: 211, maxDegree: 270, value: "Nyanyi lagu (bebas)!" },
-  { minDegree: 271, maxDegree: 330, value: "Ajak salah satu teman kamu maju ke depan" },
+  { minDegree: 271, maxDegree: 330, value: "Squat jump 5 kali!" },
   { minDegree: 331, maxDegree: 360, value: "Joget ajojing di depan temen - temen!" },
 ];
 //Size of each piece

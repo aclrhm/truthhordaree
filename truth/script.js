@@ -5,8 +5,8 @@ const finalValue = document.getElementById("final-value");
 const rotationValues = [
   { minDegree: 0, maxDegree: 30, value: "Kapan terakhir kali kamu nangis?" },
   { minDegree: 31, maxDegree: 90, value: "Siapa yang terakhir kali kamu chat?" },
-  { minDegree: 91, maxDegree: 150, value: "Mentor tercantik menurut kamu?" },
-  { minDegree: 151, maxDegree: 210, value: "Mentor terganteng menurut kamu?" },
+  { minDegree: 91, maxDegree: 150, value: "Mentor tercantik / ganteng menurut kamu?" },
+  { minDegree: 151, maxDegree: 210, value: "Alasan kamu masuk SMK 12?" },
   { minDegree: 211, maxDegree: 270, value: "Ada rasa suka atau naksir sama mentor gak?" },
   { minDegree: 271, maxDegree: 330, value: "Ada rasa suka atau naksir sama temen sekelas gak?" },
   { minDegree: 331, maxDegree: 360, value: "Kapan terakhir kali kamu nangis?"},

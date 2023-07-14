@@ -3,13 +3,13 @@ const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
-  { minDegree: 0, maxDegree: 30, value: "Joget ajojing di depan temen - temen!" },
-  { minDegree: 31, maxDegree: 90, value: "Ajak fotbar salah satu mentor pake gaya TBL!" },
-  { minDegree: 91, maxDegree: 150, value: "Push up 3 kali!" },
+  { minDegree: 0, maxDegree: 30, value: "Dance cupid di depan temen - temen!" },
+  { minDegree: 31, maxDegree: 90, value: "Dance cupid di depan temen - temen!" },
+  { minDegree: 91, maxDegree: 150, value: "Dance cupid di depan temen - temen!" },
   { minDegree: 151, maxDegree: 210, value: "Dance cupid di depan temen - temen!" },
-  { minDegree: 211, maxDegree: 270, value: "Nyanyi lagu (bebas)!" },
-  { minDegree: 271, maxDegree: 330, value: "Squat jump 5 kali!" },
-  { minDegree: 331, maxDegree: 360, value: "Joget ajojing di depan temen - temen!" },
+  { minDegree: 211, maxDegree: 270, value: "Dance cupid di depan temen - temen!" },
+  { minDegree: 271, maxDegree: 330, value: "Dance cupid di depan temen - temen!" },
+  { minDegree: 331, maxDegree: 360, value: "Dance cupid di depan temen - temen!" },
 ];
 //Size of each piece
 const data = [16, 16, 16, 16, 16, 16];
